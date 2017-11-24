@@ -24,7 +24,7 @@
         "postinstall": "cp -n ./config/development.json ./config/production.json; set -e;",
         "commit": "git add .; git cz",
         "semantic:setup": "semantic-release-cli setup",
-        "semantic:release": "sh -x ./scripts/semantic.sh; semantic-release pre && semantic-release post"
+        "semantic:release": "./scripts/semantic.sh; semantic-release pre && semantic-release post"
     },
     "keywords": [],
     "config": {
