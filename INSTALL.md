@@ -24,8 +24,8 @@ Mac Installation...
 
 3) [To setup Docker, go here and download it... and run the package installer for MacOs Installer](https://www.docker.com/)
     Install it like you would any Mac application.
-    
-    
+
+
 ## Install the app on a Mac...
 
 Recommending that you fork and clone the repo locally, but you don't need to, instead just follow the ```ALTERNATIVEs``` listed below any steps.

@@ -28,7 +28,10 @@ Install guide...
 
 ## Contributing back
 
-...
+Contributing back involves a few guidelines and a tool or two.
+Git commits, feature branching, formatting, and semantic releasing, the complete guide is here:
+
+- [Setting up your work environment](./CONTRIBUTION.md)
 
 
 ## License

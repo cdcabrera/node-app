@@ -4,7 +4,8 @@
 #
 # Setup an initial Git Tag for Semantic Releases.
 #
-initialGitTag()
+# main()
+#
 {
     git fetch --tags;
 
@@ -14,14 +15,5 @@ initialGitTag()
         git tag v1.0.0;
         git push --tags;
     fi;
-}
-#
-#
-# main()
-#
-{
-    $(initialGitTag);
-
-    semantic-release pre && semantic-release post;
 }
 
