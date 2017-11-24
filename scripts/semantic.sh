@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 #
 # Failed to run this script... open Terminal and run $ chmod 700 [PATH-TO-REPO]/scripts/semantic.sh
 #
