@@ -24,3 +24,4 @@ initialGitTag()
 
     semantic-release pre && semantic-release post;
 }
+
