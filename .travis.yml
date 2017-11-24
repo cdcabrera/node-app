@@ -9,6 +9,5 @@ notifications:
 before_script:
   - npm prune
 after_success:
-  - git fetch --tags
   - npm run semantic:release
 
