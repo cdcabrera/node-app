@@ -20,7 +20,7 @@
     "scripts": {
         "start": "node index",
         "start:prod": "node index --prod",
-        "test": "mocha --recursive ./src/",
+        "test": "mocha --recursive ./src/; eslint ./src/",
         "postinstall": "cp -n ./config/development.json ./config/production.json; set -e;",
         "commit": "git add .; git cz",
         "semantic:setup": "semantic-release-cli setup",
@@ -37,6 +37,7 @@
     },
     "devDependencies": {
         "mocha": "^4.0.1",
+        "eslint": "^4.11.0",
         "semantic-release": "^8.2.0",
         "semantic-release-cli": "^3.2.6",
         "commitizen": "^2.9.6",

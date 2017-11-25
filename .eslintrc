@@ -1,0 +1,21 @@
+{
+    "rules": {
+        "indent": ["error", 4],
+        "no-var": 1,
+        "comma-dangle": ["error", "never"],
+        "no-plusplus": 0,
+        "prefer-const": 0,
+        "padded-blocks": 0,
+        "space-before-function-paren": 0,
+        "prefer-arrow-callback": 0,
+        "func-names": 0,
+        "prefer-destructuring": 0,
+        "no-undef": 0,
+        "no-multi-spaces": 0,
+        "no-console": 0
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}
