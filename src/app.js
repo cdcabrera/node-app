@@ -25,7 +25,7 @@ class App {
 
         if (this.options.debug) {
 
-            console.log('alert', this.options);
+            console.log('alert2', this.options);
         }
     }
 }
