@@ -28,6 +28,7 @@ class App {
             console.log('alert1', this.options);
             console.log('alert2', this.options);
             console.log('alert3', this.options);
+            console.log('alert4', this.options);
         }
     }
 }

@@ -13,18 +13,12 @@ notifications:
 before_script:
   - npm prune
 
-before_deploy:
+after_success:
   - 'git fetch --tags;
      if [ ! $(git tag -l v* | tail -n1) ]; then
        git tag v0.0.0;
      fi;'
-
-deploy:
-  provider: script
-  script: npm run semantic:release
-  skip_cleanup: true
-  on:
-    branch: master
+  - npm run semantic:release
 
 branches:
   except:
