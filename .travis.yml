@@ -13,10 +13,18 @@ notifications:
 before_script:
   - npm prune
 
-after_success:
-  - echo "testing... ${REPO}"
-  - echo "testing... ${TRAVIS_REPO_SLUG}"
-  - npm run semantic:release
+before_deploy:
+  - 'git fetch --tags;
+     if [ ! $(git tag -l v* | tail -n1) ]; then
+       git tag v0.0.0;
+     fi;'
+
+deploy:
+  provider: script
+  script: npm run semantic:release
+  skip_cleanup: true
+  on:
+    branch: master
 
 branches:
   except:
