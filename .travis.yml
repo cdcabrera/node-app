@@ -14,7 +14,9 @@ before_script:
   - npm prune
 
 after_success:
-  - 'git fetch --tags;
+  - 'git config --local user.name "Travis CI"
+     git config --local user.email "builds@travis-ci.org"
+     git fetch --tags;
      if [ ! $(git tag -l v* | tail -n1) ]; then
        git tag v0.0.0;
      fi;'
