@@ -1,6 +1,6 @@
 {
     "name": "node-app",
-    "version": "0.0.0-semantically-released",
+    "version": "0.0.0-development",
     "description": "Base for a Node app...",
     "author": "CD Cabrera <cabrera.code@gmail.com>",
     "contributors": [],
