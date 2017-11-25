@@ -33,7 +33,7 @@
         }
     },
     "release": {
-        "getLastRelease": "@semantic-release/last-release-git-tag"
+        "getLastRelease": "last-release-git"
     },
     "devDependencies": {
         "mocha": "^4.0.1",
@@ -42,7 +42,7 @@
         "semantic-release-cli": "^3.2.6",
         "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.1.0",
-        "@semantic-release/last-release-git-tag": "^2.0.0"
+        "last-release-git": "^0.0.3"
     },
     "dependencies": {
         "yargs": "^10.0.3"
