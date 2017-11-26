@@ -1,0 +1,50 @@
+{
+    "name": "node-app",
+    "version": "0.0.0-semantically-released",
+    "description": "Base for a Node app...",
+    "author": "CD Cabrera <cabrera.code@gmail.com>",
+    "contributors": [],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cdcabrera/node-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/cdcabrera/node-app/issues"
+    },
+    "homepage": "https://github.com/cdcabrera/node-app#readme",
+    "engines": {
+        "node": ">=8.9.1"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index",
+        "start:prod": "node index --prod",
+        "test": "mocha --recursive ./src/; eslint ./src/",
+        "postinstall": "cp -n ./config/development.json ./config/production.json; set -e;",
+        "commit": "git add .; git cz",
+        "semantic:setup": "semantic-release-cli setup",
+        "semantic:release": "semantic-release pre && semantic-release post"
+    },
+    "keywords": [],
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    },
+    "release": {
+        "getLastRelease": "last-release-git"
+    },
+    "devDependencies": {
+        "mocha": "^4.0.1",
+        "eslint": "^4.11.0",
+        "semantic-release": "^8.2.0",
+        "semantic-release-cli": "^3.2.6",
+        "commitizen": "^2.9.6",
+        "cz-conventional-changelog": "^2.1.0",
+        "last-release-git": "^0.0.3"
+    },
+    "dependencies": {
+        "yargs": "^10.0.3"
+    }
+}
