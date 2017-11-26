@@ -3,9 +3,7 @@ const { execSync }      = require('child_process');
 const { name, version } = require('./package');
 const config            = (require('yargs').argv.prod) ? require('./config/production') : require('./config/development');
 const app               = require('./src/app');
-
-
-let tagVersion = execSync('git tag -l v* | tail -n1\n', {timeout:1000}).toString();
+const tagVersion        = execSync('git tag -l v* | tail -n1\n', { timeout:1000 }).toString();
 
 
 app(Object.assign(config, {
