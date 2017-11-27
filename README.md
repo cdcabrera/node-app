@@ -18,12 +18,12 @@ The minimum requirements you'll need to meet...
 
 Install guide... 
 
-- [Tool installation](./INSTALL.md)
+- [Tool installation](./docs/INSTALL.md)
 
 
 ### Setup your app
 
-- [Install the app](./INSTALL.md)
+- [Install the app](./docs/INSTALL.md)
 
 
 ## Contributing back
@@ -31,7 +31,7 @@ Install guide...
 Contributing back involves a few guidelines and a tool or two.
 Git commits, feature branching, formatting, and semantic releasing, the complete guide is here:
 
-- [Setting up your work environment](./CONTRIBUTION.md)
+- [Setting up your work environment](./docs/CONTRIBUTION.md)
 
 
 ## License
